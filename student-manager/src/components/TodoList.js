@@ -1,7 +1,12 @@
 import React from 'react'
+import Todo from './Todo'
 
-export default function TodoList() {
+export default function TodoList({todoList}) {
     return (
-        <p>Day la todo list</p>
+        <>
+        {
+            todoList.map(todo => <Todo todo={todo}/>)
+        }
+        </>
     )
 }

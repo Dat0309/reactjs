@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
+import App from './App';
 import './index.css';
 
 const arrSV = ["Dinh Trong Dat", "Tran Minh Canh", "Dao Xuan Hai"];
@@ -61,7 +62,7 @@ function DSSinhVien(props){
 
 const e1 = (
   <div>
-    <DSSinhVien data={arrSV} />
+    <App />
   </div>
 );
 
